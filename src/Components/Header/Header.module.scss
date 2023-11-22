@@ -1,0 +1,22 @@
+@import "../../theme-variables";
+@import "../../utils";
+
+.Header {
+  @include flex-start-start-column-items;
+  width: 100%;
+  font-size: 25px;
+  font-weight: 600;
+  color: $text;
+  gap: 10px;
+  padding: 35px 30px 0;
+
+  > span {
+    color: $background;
+    font-size: 20px;
+  }
+}
+
+.actionBox {
+  @include flex-between-center-items;
+  width: 100%;
+}

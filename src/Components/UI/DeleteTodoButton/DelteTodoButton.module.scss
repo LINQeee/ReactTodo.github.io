@@ -1,0 +1,20 @@
+@import "../../../utils";
+@import "../../../theme-variables";
+
+.deleteTodoButton {
+  width: 25px;
+  height: 30px;
+  cursor: pointer;
+  background: transparent;
+  color: $background;
+  transition: all 0.15s ease;
+  @include flex-center-items;
+
+  > svg {
+    scale: 1.5;
+  }
+
+  &:hover {
+    color: transparentize($background, .4);
+  }
+}

@@ -1,0 +1,13 @@
+@import "../../utils";
+@import "../../theme-variables";
+
+.todoForm {
+  @include flex-start-start-column-items;
+  padding: 20px 30px;
+  width: 450px;
+  height: 270px;
+  background: $secondary-background;
+  box-shadow: 0px -1px 39px 7px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  gap: 25px;
+}

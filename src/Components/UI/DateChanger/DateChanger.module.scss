@@ -1,0 +1,32 @@
+@import "../../../theme-variables";
+@import "../../../utils";
+
+.dateChanger {
+  position: relative;
+  @include flex-center-items;
+  transition: all .15s ease;
+  cursor: pointer;
+
+
+  &:hover {
+    color: $background;
+  }
+
+  > input {
+    background: red;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    opacity: 0;
+
+    &::-webkit-calendar-picker-indicator {
+      pointer-events: none;
+    }
+  }
+
+  > svg {
+    position: absolute;
+    scale: 1.2;
+    pointer-events: none;
+  }
+}

@@ -1,0 +1,29 @@
+@import "./theme-variables";
+@import "./utils";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  @include flex-center-items;
+  min-height: 100vh;
+  background: $background;
+  font-family: 'Montserrat', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+#root {
+  background: $secondary-background;
+  @include flex-start-center-column-items;
+  border-radius: 15px;
+  min-height: 700px;
+  width: 500px;
+  gap: 40px;
+  overflow: hidden;
+  position: relative;
+}

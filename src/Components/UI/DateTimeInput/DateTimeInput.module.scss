@@ -1,0 +1,32 @@
+@import "../../../utils";
+@import "../../../theme-variables";
+
+.dateTimeInput {
+  width: 100%;
+  position: relative;
+  @include flex-start-start-column-items;
+  transition: all 0.3s ease;
+  gap: 5px;
+
+  > label {
+    @include styled-label;
+  }
+
+  > input {
+    @include styled-input;
+  }
+
+  > svg {
+    position: absolute;
+    right: 15px;
+    bottom: 13px;
+    scale: 1.2;
+    color: $bright-text;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+}
+
+.error {
+  @include styled-input-error;
+}

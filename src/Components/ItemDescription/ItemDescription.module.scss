@@ -1,0 +1,35 @@
+@import "../../utils";
+@import "../../theme-variables";
+
+.itemDescription {
+  @include flex-between-center-items;
+  width: 100%;
+  font-size: 20px;
+  color: $text;
+  position: relative;
+  transition: all 0.15s ease;
+
+  > span:last-child {
+    color: $bright-text;
+    font-size: 15px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    height: 1px;
+    width: 100%;
+    background: $bright-text;
+    transition: all 0.15s ease;
+    pointer-events: none;
+  }
+}
+
+.completed {
+  color: $bright-text;
+
+  &::after {
+    bottom: 9px;
+  }
+}

@@ -1,0 +1,20 @@
+@import "../../../utils";
+
+.popup {
+  @include flex-center-items;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: 0.3s ease show;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 0;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}

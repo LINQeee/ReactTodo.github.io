@@ -1,0 +1,9 @@
+@import "../../theme-variables";
+@import "../../utils";
+
+.todoItem {
+  @include flex-start-center-items;
+  width: 100%;
+  gap: 20px;
+  height: 30px;
+}

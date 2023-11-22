@@ -1,0 +1,7 @@
+@import "../../utils";
+@import "../../theme-variables";
+
+.headerDate {
+  @include flex-start-center-items;
+  gap: 10px;
+}

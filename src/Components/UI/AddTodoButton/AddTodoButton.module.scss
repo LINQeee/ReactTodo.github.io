@@ -1,0 +1,21 @@
+@import "../../../theme-variables";
+@import "../../../utils";
+
+.addTodoButton {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: $background;
+  color: $secondary-background;
+  @include flex-center-items;
+  cursor: pointer;
+  transition: all 0.15s ease;
+
+  &:hover {
+    opacity: 0.75;
+  }
+
+  > svg {
+    scale: 1.8;
+  }
+}

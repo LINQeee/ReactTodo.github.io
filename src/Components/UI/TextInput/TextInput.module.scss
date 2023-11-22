@@ -1,0 +1,20 @@
+@import "../../../theme-variables";
+@import "../../../utils";
+
+.textInput {
+  @include flex-start-start-column-items;
+  width: 100%;
+  gap: 5px;
+
+  > input {
+    @include styled-input;
+  }
+
+  > label {
+    @include styled-label;
+  }
+}
+
+.error {
+  @include styled-input-error;
+}
